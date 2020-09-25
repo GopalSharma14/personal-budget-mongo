@@ -91,6 +91,7 @@ div.hero h2 {
     margin: 20px;
 }
 
+/* My first A11y change - Ensuring the links are recognizable as links which i have used in my footer */
 a:link, a:visited {
     background-color: #f44378;
     color: white;
@@ -103,12 +104,5 @@ a:link, a:visited {
 @media screen and (min-width: 768px) {
     .container .div.text-box {
         margin: 10px;
-    }
-}
-
-/* my first A11y change */  
-@media screen and (max-width: 767px) {
-    .container .div.text-box {
-        margin: 30px;
     }
 }
