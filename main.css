@@ -96,3 +96,9 @@ div.hero h2 {
         margin: 10px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .container .div.text-box {
+        margin: 30px;
+    }
+}
