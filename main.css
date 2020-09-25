@@ -97,6 +97,7 @@ div.hero h2 {
     }
 }
 
+/* my first A11y change */
 @media screen and (max-width: 767px) {
     .container .div.text-box {
         margin: 30px;
