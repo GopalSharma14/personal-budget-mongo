@@ -91,13 +91,22 @@ div.hero h2 {
     margin: 20px;
 }
 
+a:link, a:visited {
+    background-color: #f44378;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
 @media screen and (min-width: 768px) {
     .container .div.text-box {
         margin: 10px;
     }
 }
 
-/* my first A11y change */
+/* my first A11y change */  
 @media screen and (max-width: 767px) {
     .container .div.text-box {
         margin: 30px;
