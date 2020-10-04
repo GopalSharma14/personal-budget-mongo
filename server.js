@@ -7,38 +7,38 @@ const path = require('path');
 
 app.use('/', express.static('public'));
 
-// const  budget = {
-//     myBudget: [
-//     {
-//         title: 'Eat out',
-//         budget:70
-//     },
-//     {
-//         title: 'Rent',
-//         budget:330
-//     },
-//     {
-//         title: 'Groceries',
-//         budget:100
-//     },
-//     {
-//         title: 'Internet',
-//         budget:100
-//     },
-//     {
-//         title: 'Laundry',
-//         budget:100
-//     },
-//     {
-//         title: 'Groceries',
-//         budget:100
-//     },
-//     {
-//         title: 'Groceries',
-//         budget:100
-//     }
+const budget = {
+    myBudget: [
+    {
+        title: 'Eating out',
+        budget:70
+    },
+    {
+        title: 'Rent',
+        budget:330
+    },
+    {
+        title: 'Groceries',
+        budget:100
+    },
+    {
+        title: 'Internet',
+        budget:100
+    },
+    {
+        title: 'Laundry',
+        budget:100
+    },
+    {
+        title: 'Groceries',
+        budget:100
+    },
+    {
+        title: 'Groceries',
+        budget:100
+    }
 
-// ]};
+]};
 
 app.get('/hello',(req, res) => {
     res.send('Hello world!');

@@ -1,1 +1,11 @@
-{"myBudget":[{"title":"Eat out","budget":70},{"title":"Rent","budget":330},{"title":"Groceries","budget":100},{"title":"Internet","budget":40},{"title":"Laundry","budget":55},{"title":"Phone bill","budget":50},{"title":"Water bill","budget":20}]}
+{
+  "myBudget": [
+    { "title": "Eat out", "budget": 70 },
+    { "title": "Rent", "budget": 330 },
+    { "title": "Groceries", "budget": 100 },
+    { "title": "Internet", "budget": 40 },
+    { "title": "Laundry", "budget": 55 },
+    { "title": "Phone bill", "budget": 50 },
+    { "title": "Water bill", "budget": 20 }
+  ]
+}

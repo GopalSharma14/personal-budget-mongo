@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/GopalSharma14/personal-budget#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "pm2": "^4.5.0"
   }
 }
