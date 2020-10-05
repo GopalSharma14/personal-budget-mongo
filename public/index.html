@@ -160,7 +160,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
         integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
         crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
 
@@ -232,12 +232,20 @@
 
      
 
-        
-        axios.get("/budget").then(async function (res) {
+        var myData = {}
+        // axios.get("/budget").then(async function (res) {
 
-            var myData = {};
-            res.data.myBudget.forEach(i => myData[i.title] = i.budget);
-            console.log(myData); 
+        //     var myData = {};
+        //     res.data.myBudget.forEach(i => myData[i.title] = i.budget);
+        //     console.log(myData); 
+        d3.json("/budget").then(function (res) {
+       console.log(res.myBudget);
+       for (var i = 0; i < res.myBudget.length; i++) {
+        myData[res.myBudget[i].title] = res.myBudget[i].budget
+        myTitle.push(res.myBudget[i].title)
+    
+    }
+        
         
         
             
