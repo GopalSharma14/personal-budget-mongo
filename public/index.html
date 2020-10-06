@@ -13,8 +13,8 @@
     <link rel=”canonical” href=”http://68.183.108.233/pb/” />
     <!-- My third SEO change  -->
     <link rel="alternate" href="http://68.183.108.233/pb/" hreflang="en-en" />
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="http://localhost:3000/reset.css">
+    <link rel="stylesheet" href="http://localhost:3000/main.css">
 </head>
 
 <body>
@@ -201,7 +201,7 @@
         }
 
         function getBudget() {
-            axios.get('/budget')
+            axios.get('http://localhost:3000/budget')
                 .then(function (res) {
                     // console.log(res);
                     for (var i = 0; i < res.data.myBudget.length; i++) {
@@ -238,7 +238,7 @@
         //     var myData = {};
         //     res.data.myBudget.forEach(i => myData[i.title] = i.budget);
         //     console.log(myData); 
-        d3.json("/budget").then(function (res) {
+        d3.json("http://localhost:3000/budget").then(function (res) {
        console.log(res.myBudget);
        for (var i = 0; i < res.myBudget.length; i++) {
         myData[res.myBudget[i].title] = res.myBudget[i].budget
